@@ -1,0 +1,76 @@
+<ng-template #modalTemplate>
+    <app-modal-calificacion-pamec [dataFromParent]="modalRef"></app-modal-calificacion-pamec>
+</ng-template>
+
+<div class="fade-in">
+    <c-card class="mb-4">
+        <c-card-header class="text-center" style="color: black; font-weight: bold; font-size: x-large;">
+            Programa de auditoria para el mejoramiento de la calidad (PAMEC)
+        </c-card-header>
+
+        <h5 class="text-center">CUMPLIMIENTO DEL PROGRAMA DE SEGURIDAD DEL PACIENTE
+            PROFESIONALES INDEPENDIENTES</h5>
+
+        <c-card-body>
+            <c-row class="">
+                <div class="col-sm-6">
+                    <h5 class="text-decoration-underline"><b>Prestador:</b></h5>
+                    <span id="nombre-prestador">{{nombre_prestador}}</span>
+                </div>
+
+                <div class="col-md-6">
+                    <h5 class="text-decoration-underline"><b>Actividad:</b></h5>
+                    <select class="form-select form-control" name="act_id" id="act_id" (change)="cargarCriterios()">
+                        <option hidden selected value="">Selecciona la Actividad...</option>
+                        <option *ngFor="let actividad of actividad" value="{{actividad.act_id}}">
+                            {{actividad.act_nombre}}</option>
+                    </select>
+                </div>
+            </c-row>
+
+            <table class="table table-wrapper table-hover">
+                <div class="col-sm-12 text-center" *ngIf="!controlCriterio">
+                    <h5><b>Selecciona una actividad a evaluar</b></h5>
+                </div>
+                <thead>
+                    <tr *ngIf="controlCriterio">
+                        <th scope="col">Nro</th>
+                        <th scope="col">Criterio</th>
+                        <th scope="col">Calificación</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let criterio of criteriopam; let i = index">
+                        <td class="text-center">{{i+1}}</td>
+                        <td style="text-align: justify;">
+                            {{criterio.crip_nombre}}</td>
+
+                        <td class="text-center">
+                            <button class="btn" [ngClass]="getClassForCriterio(criterio)"
+                                [disabled]="sharedService.criteriosPamecGuardados.includes(criterio.crip_id)"
+                                (click)="openModal(modalTemplate, criterio.crip_id!, eva_pam_id)">
+                                <i class="fa fa-check"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <div class="col-12" *ngIf="controlCriterio">
+                        <button class="btn btn-outline-dark esp btn-circle btn-xl" title="Guardar" type="submit">
+                            <i class='fa fa-save fa-lg'></i></button>
+                    </div>
+
+                </tbody>
+            </table>
+
+
+            <div class="container" *ngIf="listaVacia">
+                <div class="p-3 mb-2 bg-dark text-white text-center">
+                    <h2>{{ listaVacia }}</h2>
+                </div>
+            </div>
+        </c-card-body>
+
+    </c-card>
+
+</div>

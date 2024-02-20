@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+$enable-ltr: true;
+$enable-rtl: true;
+
+// Import styles with default layout.
+@import "@coreui/coreui/scss/coreui";
+
+@import "app/scss/layout";
+
+
+@import '../node_modules/ngx-toastr/toastr.css';
+
+
+
+
+
+
+//ESTILOS A LOS LABELS
+.custom-label {
+  color: #030303;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+//COLOR DE FONDO DEL SITIO
+html {
+    background-color: #636262;
+  }
+
+body {
+    background-color: #636262;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+

@@ -1,0 +1,38 @@
+/*ESTILOS BOTON NO APLICA*/
+.button-like {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-like:hover {
+  background-color: #3d4347;
+}
+
+.btn-span:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+/* Estilo cuando el input está enfocado (seleccionado) */
+input:focus {
+  border: 1px solid #6d6d6d; /* Color input seleccionado */
+  outline: none; /* Para quitar el contorno por defecto en algunos navegadores */
+  box-shadow: 0 0 5px rgba(10, 10, 10, 0.5); /* Efecto de sombra al enfocar */
+}
+
+textarea:focus {
+  border: 1px solid #6d6d6d; /* Color input seleccionado */
+  outline: none; /* Para quitar el contorno por defecto en algunos navegadores */
+  box-shadow: 0 0 5px rgba(10, 10, 10, 0.5); /* Efecto de sombra al enfocar */
+}
+/* Estilo cuando el select está enfocado (seleccionado) */
+select:focus {
+  border: 1px solid #6d6d6d; /* Color al Select seleccionado */
+  outline: none; /* Para quitar el contorno por defecto en algunos navegadores */
+  box-shadow: 0 0 5px rgba(10, 10, 10, 0.5); /* Efecto de sombra al enfocar */
+}

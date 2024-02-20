@@ -1,0 +1,104 @@
+/*CENTRAR ROLES*/
+.roles {
+  display: flex;
+  align-items: center; /* Esto centra verticalmente los elementos hijos */
+  margin-left: 12px;
+}
+
+/*AJUSTAR LABEL ENTRE ELLOS*/
+.roles label {
+  margin-right: 10px;
+}
+
+/*SLIDERS PERFILES*/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px; /* Mantenemos el borde redondeado */
+}
+
+/* The thumb (bolita) */
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Checked state */
+.switch input:checked + .slider {
+  background-color: #4e4e4e;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Estilo cuando el input está enfocado (seleccionado) */
+input:focus {
+  border: 1px solid #6d6d6d; /* Color input seleccionado */
+  outline: none; /* Para quitar el contorno por defecto en algunos navegadores */
+  box-shadow: 0 0 5px rgba(10, 10, 10, 0.5); /* Efecto de sombra al enfocar */
+}
+
+/* Estilo cuando el select está enfocado (seleccionado) */
+select:focus {
+  border: 1px solid #6d6d6d; /* Color al Select seleccionado */
+  outline: none; /* Para quitar el contorno por defecto en algunos navegadores */
+  box-shadow: 0 0 5px rgba(10, 10, 10, 0.5); /* Efecto de sombra al enfocar */
+}
+
+
+//Boton de firma
+.button-like {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-like:hover {
+    background-color: #3d4347;
+}
+
+.btn-span:hover {
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}

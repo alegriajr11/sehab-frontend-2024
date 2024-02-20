@@ -1,0 +1,37 @@
+<div class="wrapper fadeInDown">
+
+
+    <span class="h1 fw-bold mb-4 text-center text-white">SISTEMA DE EVALUACIÓN PARA LA
+        HABILITACIÓN</span>
+
+    <div id="formContent">
+
+        <!-- Tabs Titles -->
+        <h2 class="titulo"> Iniciar Sesión </h2>
+
+        <hr>
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <img src="../../../../assets/img/brand/logo-ssd-login.svg" id="icon" alt="User Icon" />
+        </div>
+
+        <!-- Login Form -->
+        <form #f="ngForm" novalidate (ngSubmit)="onLogin()">
+            <input type="text" class="fadeIn second" name="usu_nombreUsuario" placeholder="Usuario"
+                id="usu_nombreUsuario" autocomplete="off" required [(ngModel)]="usu_nombreUsuario">
+            <input type="password" id="password" class="fadeIn third" name="login" placeholder="Contraseña" required
+                [(ngModel)]="usu_password">
+
+            <!-- Remind Passowrd -->
+            <div class="fadeIn fourth">
+                <button class="btn btn-dark btn-lg btn-block send mb-3 mt-3" type="submit" [disabled]="!f.valid">
+                    <i class='fas fa-sign-in-alt'></i> Inciar Sesión
+                </button>
+            </div>
+
+        </form>
+
+
+    </div>
+</div>

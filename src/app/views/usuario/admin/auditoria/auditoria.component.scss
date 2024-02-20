@@ -1,0 +1,35 @@
+span {
+    font-size: xx-large;
+  }
+  .table-title {
+    background: #343a40;
+    color: #fff;
+    padding: 16px 30px;
+    margin: -20px -25px 10px;
+    border-radius: 3px 3px 0 0;
+  }
+  
+  /* Estilos para el sombreado al pasar el ratón */
+  .hover-auditorias:hover {
+    background-color: #d8d8d8;
+  }
+  
+  /* Estilo cuando el input está enfocado (seleccionado) */
+  input:focus {
+    border: 1px solid #6d6d6d; /* Color input seleccionado */
+    outline: none; /* Para quitar el contorno por defecto en algunos navegadores */
+    box-shadow: 0 0 5px rgba(10, 10, 10, 0.5); /* Efecto de sombra al enfocar */
+  }
+  
+  /* Estilo cuando el select está enfocado (seleccionado) */
+  select:focus {
+    border: 1px solid #6d6d6d; /* Color al Select seleccionado */
+    outline: none; /* Para quitar el contorno por defecto en algunos navegadores */
+    box-shadow: 0 0 5px rgba(10, 10, 10, 0.5); /* Efecto de sombra al enfocar */
+  }
+  
+  //Estilos a los th del table
+  th {
+    color: white;
+  }
+  
