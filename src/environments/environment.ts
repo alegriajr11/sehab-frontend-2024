@@ -8,110 +8,110 @@ export const environment = {
 
 
   //USUARIOS
-  usuarioURL: 'https://sehab-backend-33d408676746.herokuapp.com/usuario/',
-  authURL: 'https://sehab-backend-33d408676746.herokuapp.com/auth/',
-  restablecerContraseña: 'https://sehab-backend-33d408676746.herokuapp.com/auth/request-reset-password/',
+  usuarioURL: 'http://localhost:8080/usuario/',
+  authURL: 'http://localhost:8080/auth/',
+  restablecerContraseña: 'http://localhost:8080/auth/request-reset-password/',
 
-  prestadorURL: 'https://sehab-backend-33d408676746.herokuapp.com/prestador/',
-  prestadorMunicipioURL: 'https://sehab-backend-33d408676746.herokuapp.com/prestador/mun/',
-  prestadorPamecMunicipioURL: 'https://sehab-backend-33d408676746.herokuapp.com/prestador/mun/pamec/',
+  prestadorURL: 'http://localhost:8080/prestador/',
+  prestadorMunicipioURL: 'http://localhost:8080/prestador/mun/',
+  prestadorPamecMunicipioURL: 'http://localhost:8080/prestador/mun/pamec/',
   
-  prestadorIpsMunicipioURL: 'https://sehab-backend-33d408676746.herokuapp.com/prestador/mun/sp/ips/',
-  prestadorIndMunicipioURL: 'https://sehab-backend-33d408676746.herokuapp.com/prestador/mun/sp/pro/ind/',
-  rolURL: 'https://sehab-backend-33d408676746.herokuapp.com/rol/',
-  claseURL: 'https://sehab-backend-33d408676746.herokuapp.com/clase/',
-  generarPdfURL: 'https://sehab-backend-33d408676746.herokuapp.com/generarpdf/usuarios/',
+  prestadorIpsMunicipioURL: 'http://localhost:8080/prestador/mun/sp/ips/',
+  prestadorIndMunicipioURL: 'http://localhost:8080/prestador/mun/sp/pro/ind/',
+  rolURL: 'http://localhost:8080/rol/',
+  claseURL: 'http://localhost:8080/clase/',
+  generarPdfURL: 'http://localhost:8080/generarpdf/usuarios/',
 
   //SEDES - PRESTADOR
-  sedeURL: 'https://sehab-backend-33d408676746.herokuapp.com/sede/',
+  sedeURL: 'http://localhost:8080/sede/',
 
 
   //SIC
-  criterioSicURL: 'https://sehab-backend-33d408676746.herokuapp.com/criteriosic/',
-  indicadorURL: 'https://sehab-backend-33d408676746.herokuapp.com/indicador/',
-  criterios_URL: 'https://sehab-backend-33d408676746.herokuapp.com/criterio/',
-  criterioURL: 'https://sehab-backend-33d408676746.herokuapp.com/criteriosic/criterio/',
-  cumplimientoEstandarURL: 'https://sehab-backend-33d408676746.herokuapp.com/criteriosic-cumplimiento/',
-  divCreadoURL: 'https://sehab-backend-33d408676746.herokuapp.com/divs-creados-sic/',
+  criterioSicURL: 'http://localhost:8080/criteriosic/',
+  indicadorURL: 'http://localhost:8080/indicador/',
+  criterios_URL: 'http://localhost:8080/criterio/',
+  criterioURL: 'http://localhost:8080/criteriosic/criterio/',
+  cumplimientoEstandarURL: 'http://localhost:8080/criteriosic-cumplimiento/',
+  divCreadoURL: 'http://localhost:8080/divs-creados-sic/',
 
   //EVALUACION-SIC
-  evaluacionSicUrl: 'https://sehab-backend-33d408676746.herokuapp.com/evaluacion-sic/',
+  evaluacionSicUrl: 'http://localhost:8080/evaluacion-sic/',
   
   //SIC-PDF
-  actaSic_pdf_URL: 'https://sehab-backend-33d408676746.herokuapp.com/sic-acta/',
+  actaSic_pdf_URL: 'http://localhost:8080/sic-acta/',
 
 
   //PAMEC
-  actividadURL: 'https://sehab-backend-33d408676746.herokuapp.com/actividad/',
-  criteriopamURL: 'https://sehab-backend-33d408676746.herokuapp.com/criteriopam/',
-  criteriopam1URL: 'https://sehab-backend-33d408676746.herokuapp.com/criteriopam/criterio/',
-  calificacionPamecURL: 'https://sehab-backend-33d408676746.herokuapp.com/calificacionpamec/',
+  actividadURL: 'http://localhost:8080/actividad/',
+  criteriopamURL: 'http://localhost:8080/criteriopam/',
+  criteriopam1URL: 'http://localhost:8080/criteriopam/criterio/',
+  calificacionPamecURL: 'http://localhost:8080/calificacionpamec/',
 
   //PAMEC-PDF
-  actaPamec_pdf_url: 'https://sehab-backend-33d408676746.herokuapp.com/pamec-acta/',
+  actaPamec_pdf_url: 'http://localhost:8080/pamec-acta/',
 
   //SEGURIDAD DEL PACIENTE - PROFESIONALES INDEPENDIENTE
-  etapaURL: 'https://sehab-backend-33d408676746.herokuapp.com/sp-ind/',
-  criterioindURL: 'https://sehab-backend-33d408676746.herokuapp.com/criterioind/',
-  criteindURL: 'https://sehab-backend-33d408676746.herokuapp.com/criterioind/criterio/',
-  calificacionIndURL: 'https://sehab-backend-33d408676746.herokuapp.com/calificacionind/',
+  etapaURL: 'http://localhost:8080/sp-ind/',
+  criterioindURL: 'http://localhost:8080/criterioind/',
+  criteindURL: 'http://localhost:8080/criterioind/criterio/',
+  calificacionIndURL: 'http://localhost:8080/calificacionind/',
   
   //EVALUACION-SP - INDEPENDIENTES
-  evaluacionIndUrl: 'https://sehab-backend-33d408676746.herokuapp.com/evaluacion-ind/',
+  evaluacionIndUrl: 'http://localhost:8080/evaluacion-ind/',
 
 
   //SEGURIDAD DEL PACIENTE - IPS
-  evaluacionipsURL: 'https://sehab-backend-33d408676746.herokuapp.com/evaluacionips/',
-  generarEvaluacionUrl: 'https://sehab-backend-33d408676746.herokuapp.com/sp-ips/',
-  itemipsURL: 'https://sehab-backend-33d408676746.herokuapp.com/itemips/',
-  planeacionURL: 'https://sehab-backend-33d408676746.herokuapp.com/planeacion/',
-  planeacionOneURL: 'https://sehab-backend-33d408676746.herokuapp.com/planeacion/criterio/',
-  implementacionURL: 'https://sehab-backend-33d408676746.herokuapp.com/criterioimple/',
-  implementacionOneURL: 'https://sehab-backend-33d408676746.herokuapp.com/criterioimple/implementacion/',
-  ajusteURL: 'https://sehab-backend-33d408676746.herokuapp.com/criterioajuste/',
-  ajusteDetailURL: 'https://sehab-backend-33d408676746.herokuapp.com/criterioajuste/ajuste/',
-  verificacionURL: 'https://sehab-backend-33d408676746.herokuapp.com/criterioverif/',
-  verificacionOneURL: 'https://sehab-backend-33d408676746.herokuapp.com/criterioverif/verificacion/',
+  evaluacionipsURL: 'http://localhost:8080/evaluacionips/',
+  generarEvaluacionUrl: 'http://localhost:8080/sp-ips/',
+  itemipsURL: 'http://localhost:8080/itemips/',
+  planeacionURL: 'http://localhost:8080/planeacion/',
+  planeacionOneURL: 'http://localhost:8080/planeacion/criterio/',
+  implementacionURL: 'http://localhost:8080/criterioimple/',
+  implementacionOneURL: 'http://localhost:8080/criterioimple/implementacion/',
+  ajusteURL: 'http://localhost:8080/criterioajuste/',
+  ajusteDetailURL: 'http://localhost:8080/criterioajuste/ajuste/',
+  verificacionURL: 'http://localhost:8080/criterioverif/',
+  verificacionOneURL: 'http://localhost:8080/criterioverif/verificacion/',
 
   //URL DE CALIFICACION POR ETAPA
-  calificacionIpsAjuste: 'https://sehab-backend-33d408676746.herokuapp.com/calificacionips-ajuste/',
-  calificacionIpsImplementacion: 'https://sehab-backend-33d408676746.herokuapp.com/calificacionips-implementacion/',
-  calificacionIpsPlaneacion: 'https://sehab-backend-33d408676746.herokuapp.com/calificacionips-planeacion/',
-  calificacionIpsVerificacion: 'https://sehab-backend-33d408676746.herokuapp.com/calificacionips-verificacion/',
+  calificacionIpsAjuste: 'http://localhost:8080/calificacionips-ajuste/',
+  calificacionIpsImplementacion: 'http://localhost:8080/calificacionips-implementacion/',
+  calificacionIpsPlaneacion: 'http://localhost:8080/calificacionips-planeacion/',
+  calificacionIpsVerificacion: 'http://localhost:8080/calificacionips-verificacion/',
 
   //SP-PDF
-  actaSpIps_pdf_URL: 'https://sehab-backend-33d408676746.herokuapp.com/sp-ips/',
-  actaSpInd_pdf_URL: 'https://sehab-backend-33d408676746.herokuapp.com/sp-independientes/',
+  actaSpIps_pdf_URL: 'http://localhost:8080/sp-ips/',
+  actaSpInd_pdf_URL: 'http://localhost:8080/sp-independientes/',
 
 
 
   //RESOLUCIÓN 3100/2019
   //ACTA-VERIFICACION
-  actaVerificacion: 'https://sehab-backend-33d408676746.herokuapp.com/verificacion/',
+  actaVerificacion: 'http://localhost:8080/verificacion/',
 
   //CONDICIONES DE CAPACIDAD TECNOLOGICA Y CIENTIFICA 
-  todos_serviciosURL: 'https://sehab-backend-33d408676746.herokuapp.com/criterio-servicios/',
-  cumplimiento_todos_serviciosUrl: 'https://sehab-backend-33d408676746.herokuapp.com/cumplimiento-todos-servicios/',
+  todos_serviciosURL: 'http://localhost:8080/criterio-servicios/',
+  cumplimiento_todos_serviciosUrl: 'http://localhost:8080/cumplimiento-todos-servicios/',
 
 
   //CUMPLIMIENTO DE REQUISITOS DE LAS CONDICIONES DE HABILITACIÓN 
-  condiciones_habilitacion: 'https://sehab-backend-33d408676746.herokuapp.com/requisitos-condiciones-habilitacion/',
+  condiciones_habilitacion: 'http://localhost:8080/requisitos-condiciones-habilitacion/',
 
   //SERVICIOS VERIFICADOS - PRESTADOR RESOLUCION 3100
-  servicios_verificados: 'https://sehab-backend-33d408676746.herokuapp.com/servicios-verificados/',
+  servicios_verificados: 'http://localhost:8080/servicios-verificados/',
 
 
   //PRESTADOR
-  municipioURL: 'https://sehab-backend-33d408676746.herokuapp.com/municipio/',
-  clasificacionURL: 'https://sehab-backend-33d408676746.herokuapp.com/clasificacion/',
-  tipoURL: 'https://sehab-backend-33d408676746.herokuapp.com/tipo/',
+  municipioURL: 'http://localhost:8080/municipio/',
+  clasificacionURL: 'http://localhost:8080/clasificacion/',
+  tipoURL: 'http://localhost:8080/tipo/',
 
 
   //AUDITORIA
-  auditoriaUrl: 'https://sehab-backend-33d408676746.herokuapp.com/auditoria-registro/',
+  auditoriaUrl: 'http://localhost:8080/auditoria-registro/',
 
   //BACKUP BASE DE DATOS
-  backupUrl: 'https://sehab-backend-33d408676746.herokuapp.com/'
+  backupUrl: 'http://localhost:8080/'
 };
 
 /*
