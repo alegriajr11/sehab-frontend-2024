@@ -35,7 +35,7 @@ export class ReestablecerPasswordComponent {
   ) { }
 
   ngOnInit(): void {
-    this.nombreUsuario = localStorage.getItem('nombreUsuario') ?? '';
+    this.nombreUsuario = localStorage.getItem('nombreUsuario');
     const id = this.activatedRoute.snapshot.queryParams['id'];
     this.usuarioService.oneUser(id).subscribe(
       data => {

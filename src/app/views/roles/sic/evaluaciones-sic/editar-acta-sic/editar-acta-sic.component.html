@@ -1,0 +1,27 @@
+<div class="fade-in">
+    <c-card class="mb-4">
+        <c-card-header class="d-flex" style="color: black; font-weight: bold; font-size: x-large;">
+            <div>
+                <button class="btn btn-outline-dark" (click)="volver()">
+                    <i class="fa fa-reply fa-lg"></i>
+                </button>
+            </div>
+            <div class="d-flex align-items-center justify-content-center w-100 text-center">
+                INDICADORES PARA EL MONITOREO DE LA CALIDAD/PRESTADORES DE SERVICIOS
+                ACTA DE VERIFICACION Y SEGUIMIENTO
+            </div>
+        </c-card-header>
+
+        <c-card-body>
+            <c-row>
+                <form novalidate class="row g-3" name="ps" (ngSubmit)="onUpdate()" id="form">
+                    <div class="col-md-2 mb-3">
+                        <label for="inputN_Acta" class="form-label text-center">N°ACTA</label>
+                        <input type="number" min="0" class="form-control" id="acta" readonly name="act_id"
+                            [(ngModel)]="actaSic.act_id">
+                    </div>
+                </form>
+            </c-row>
+        </c-card-body>
+    </c-card>
+</div>

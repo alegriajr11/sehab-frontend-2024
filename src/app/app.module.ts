@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DefaultFooterComponent, DefaultHeaderComponent, DefaultLayoutComponent } from './containers';
-import { AvatarModule, BreadcrumbModule, ButtonModule, CardModule, DropdownModule, GridModule, HeaderModule, NavModule, SidebarModule, ToastModule } from '@coreui/angular';
+import { AvatarModule, BreadcrumbModule, ButtonModule, CardModule, DropdownModule, FooterModule, GridModule, HeaderModule, ModalModule, NavModule, SidebarModule, ToastModule } from '@coreui/angular';
 import { NgScrollbarModule } from 'ngx-scrollbar';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
@@ -48,6 +48,7 @@ import { UsuarioModule } from './views/usuario/usuario.module';
 import { ModalFirmaRolComponent } from './views/usuario/nuevo-usuario/nuevo-usuario-rol/modal-firma-rol/modal-firma-rol.component';
 import { ReestablecerPasswordComponent } from './views/usuario/reestablecer-password/reestablecer-password.component';
 import { ModalCalificacionPamecComponent } from './views/roles/pamec/evaluacion-pamec/modal-calificacion-pamec/modal-calificacion-pamec.component';
+import { ModalEvaluacionesSicComponent } from './views/roles/sic/evaluaciones-sic/modal-evaluaciones-sic/modal-evaluaciones-sic.component';
 
 
 const APP_CONTAINERS = [
@@ -86,7 +87,8 @@ const APP_CONTAINERS = [
     CriterioPamecComponent,
     CriterioSicComponent,
     ModalFirmaRolComponent,
-    ReestablecerPasswordComponent
+    ReestablecerPasswordComponent,
+    ModalEvaluacionesSicComponent
 
   ],
   imports: [
@@ -110,7 +112,9 @@ const APP_CONTAINERS = [
     ButtonModule,
     ToastModule,
     IconModule,
+    ModalModule,
     PagesModule,
+    FooterModule,
     SpModule,
     UsuarioModule
     

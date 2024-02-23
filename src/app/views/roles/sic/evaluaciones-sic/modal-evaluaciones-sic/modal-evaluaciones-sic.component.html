@@ -1,0 +1,64 @@
+<c-modal-header>
+    <h5 cModalTitle>{{nombre_prestador}}</h5>
+    <button cButtonClose (click)="modalRef?.hide()"></button>
+</c-modal-header>
+
+<c-modal-body>
+    <div class="row justify-content-between">
+        <div class="col-md-12 text-center">
+            <span>Verificador Responsable:</span>
+        </div>
+        <div class="col-md-12">
+            <h5 class="modal-title text-center underlined">{{nombre_funcionario}}</h5>
+        </div>
+    </div>
+    <hr>
+
+    <h2 class="display-4 text-center">REPORTE</h2>
+
+    <hr>
+    <h2 class="text-center mb-4">ACTA:</h2>
+    <div class="row text-center">
+        <div class="col-md-4 mb-3">
+            <button class="btn btn-dark" title="Descargar Acta" (click)="generarPdfActa()">
+                <i class='fas fa-file-download fa-lg'></i>
+            </button>
+            <span> Descargar</span>
+        </div>
+
+        <div class="col-md-4 mb-3" *ngIf="estado_acta === '1'">
+            <button class="btn btn-dark" title="Editar Acta" [routerLink]="['/sic/editar-acta-sic']"
+                [queryParams]="{ id: id_evaluacion }" (click)="modalRef.hide(); habilitarRutaEditar()">
+                <i class='fa fa-edit fa-lg'></i>
+            </button>
+            <span> Editar</span>
+        </div>
+
+        <div class="col-md-4" *ngIf="isAdmin && estado_acta === '1'">
+            <button class="btn btn-dark" (mouseover)="changeIcon()" title="Cerrar Acta" (click)="cerrarActa()"
+                (mouseout)="restoreIcon()">
+                <i [class]="iconClass"></i>
+            </button>
+            <span> Cerrar Acta</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2 class="text-center mb-4">EVALUACIÓN:</h2>
+    <div class="row text-center">
+        <div class="col-md-6 mb-3" *ngIf="recibeVisita ==='true'">
+            <button id="boton-evaluacion-sic" class="btn btn-dark" title="Descargar Evaluación">
+                <i class='fas fa-file-download fa-lg'></i>
+            </button>
+            <span> Descargar</span>
+        </div>
+
+        <div class="col-md-6 mb-3" *ngIf="estado_acta === '1' && recibeVisita ==='true'">
+            <button class="btn btn-dark" title="Editar Evaluación">
+                <i class='fa fa-edit fa-lg'></i>
+            </button>
+            <span> Editar</span>
+        </div>
+    </div>
+</c-modal-body>

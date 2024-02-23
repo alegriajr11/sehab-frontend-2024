@@ -18,11 +18,19 @@ import { AuthService } from '../../../services/auth.service';
 import { GenerarPdfActaService } from '../../../services/Sic/generar-pdf-acta.service';
 import { SedesPrestadorService } from '../../../services/sedes-prestador.service';
 import { CumplimientoEstandarService } from '../../../services/Sic/cumplimiento-estandar.service';
+import { EditarActaSicComponent } from './evaluaciones-sic/editar-acta-sic/editar-acta-sic.component';
+import { ModalEditarFirmaSicComponent } from './evaluaciones-sic/editar-acta-sic/modal-editar-firma-sic/modal-editar-firma-sic.component';
+import { EditarEvaluacionSicComponent } from './evaluaciones-sic/editar-evaluacion-sic/editar-evaluacion-sic.component';
+import { ModalEvaluacionesSicComponent } from './evaluaciones-sic/modal-evaluaciones-sic/modal-evaluaciones-sic.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    EditarActaSicComponent,
+    ModalEditarFirmaSicComponent,
+    EditarEvaluacionSicComponent,
+  ],
   imports: [
     CommonModule,
     SicRoutingModule,

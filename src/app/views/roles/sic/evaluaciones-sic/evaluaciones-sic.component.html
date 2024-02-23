@@ -1,3 +1,8 @@
+<ng-template #modalTemplate>
+    <app-modal-evaluaciones-sic [dataFromParent]="modalRef"></app-modal-evaluaciones-sic>
+</ng-template>
+
+
 <div class="fade-in">
 
     <c-card class="mb-4">
@@ -64,7 +69,8 @@
                             <td *ngIf="evaluacion.act_estado === '0'" style="text-align: center;"><span
                                     class="fas fa-door-closed" style="color: rgb(204, 0, 0);"></span></td>
                             <td>
-                                <button class="btn btn-outline-dark">
+                                <button class="btn btn-outline-dark"
+                                    (click)="openModal(modalTemplate, evaluacion.id, evaluacion.act_prestador, evaluacion.act_nombre_funcionario, evaluacion.act_cod_prestador)">
                                     <span class="fas fa-clipboard-check"></span>
                                 </button>
                             </td>

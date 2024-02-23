@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CanActivate, Router } from '@angular/router';
+import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot } from '@angular/router';
 
 @Injectable({
     providedIn: 'root'
@@ -10,6 +10,11 @@ export class ButtonGuard implements CanActivate {
     constructor(private router: Router) { }
 
     canActivate(): boolean {
+        return this.checkButton();
+    }
+    
+
+    private checkButton(): boolean{
         const nombrePrestadorInd = localStorage.getItem('nombre-pres-sp-ind')
         const nombrePrestadorSic = localStorage.getItem('nombre-pres-sic')
         const nombrePrestadorIps = localStorage.getItem('nombre-pres-sp-ips')
